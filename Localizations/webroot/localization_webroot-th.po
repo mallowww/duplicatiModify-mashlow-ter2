@@ -1823,6 +1823,8 @@ msgid ""
 "Once there are more backups than the specified number, the oldest backups "
 "are deleted."
 msgstr ""
+"เมื่อมีข้อมูลสำรองมากกว่าจำนวนที่กำหนด ข้อมูลสำรองที่เก่าที่สุด"
+"จะถูกลบ"
 
 #: templates/backends/openstack.html:7
 msgid "OpenStack AuthURI"
@@ -1892,6 +1894,9 @@ msgid ""
 "backup for each of the last 7 days, each of the last 4 weeks, each of the "
 "last 12 months. There will always be at least one remaining backup."
 msgstr ""
+"ข้อมูลสำรองเมื่อเวลาผ่านไปจะถูกลบโดยอัตโนมัติ โดยจะเหลือเพียงรายการเดียว"
+"สำรองข้อมูลแต่ละช่วง 7 วันที่ผ่านมา แต่ละช่วง 4 สัปดาห์ที่ผ่านมาแต่ละ"
+"12 เดือนที่ผ่านมา จะมีข้อมูลสำรองอย่างน้อยหนึ่งรายการเสมอ"
 
 #: templates/restore.html:114
 msgid "Overwrite"
