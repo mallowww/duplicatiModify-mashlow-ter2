@@ -99,51 +99,6 @@
             <a href ng-click="displayDonationMessages()" ng-show="SystemInfo.SuppressDonationMessages" translate>Donation messages are hidden, click to show</a>
         </div> -->
 
-        <h2 translate>Update channel</h2>
-        <div class="input checkbox">
-            <input type="radio" class="checkbox" id="updateChannelDefault" value="" name="updateChannel"
-                ng-model="updateChannel" />
-            <label for="updateChannelDefault" translate
-                translate-params-channelname="SystemInfo.DefaultUpdateChannel">Default ({{channelname}})</label>
-            <div class="sublabel" class="" translate translate-params-channelname="SystemInfo.BaseVersionName">Same as
-                the base install version: {{channelname}}</div>
-        </div>
-
-        <!--
-        <div class="input checkbox">
-            <input type="radio" class="checkbox" id="updateChannelStable" value="stable" name="updateChannel" ng-model="updateChannel" />
-            <label for="updateChannelStable" translate>Stable</label>
-            <div class="sublabel" class="" translate>Official releases</div>
-        </div>
-        -->
-        <div class="input checkbox">
-            <input type="radio" class="checkbox" id="updateChannelBeta" value="beta" name="updateChannel"
-                ng-model="updateChannel" />
-            <label for="updateChannelBeta" translate>Beta</label>
-            <div class="sublabel" translate>Try out the new features that we are working on. Currently the most stable
-                version available. Test Restore data before using this in production environments.</div>
-        </div>
-        <div class="input checkbox">
-            <input type="radio" class="checkbox" id="updateChannelExperimental" value="experimental"
-                name="updateChannel" ng-model="updateChannel" />
-            <label for="updateChannelExperimental" translate>Experimental</label>
-            <div class="sublabel" translate>Specific builds for developers only. Not for use with important data.</div>
-        </div>
-        <div class="input checkbox">
-            <input type="radio" class="checkbox" id="updateChannelCanary" value="canary" name="updateChannel"
-                ng-model="updateChannel" />
-            <label for="updateChannelCanary" translate>Canary</label>
-            <div class="sublabel" translate>Individual builds for developers only. Not for use with important data.
-            </div>
-        </div>
-        <!--
-        <div class="input checkbox">
-            <input type="radio" class="checkbox" id="updateChannelNightly" value="nightly" name="updateChannel" ng-model="updateChannel" />
-            <label for="updateChannelNightly" translate>Nightly</label>
-            <div class="sublabel" translate>Regular builds for developers only</div>
-        </div>
-        -->
-
         <h2 ng-if="SystemInfo.DefaultUsageReportLevel != 'Disabled'" translate>Usage statistics</h2>
         <div ng-if="SystemInfo.DefaultUsageReportLevel != 'Disabled'" class="input mixed multiple">
             <label for="usagereporterlevel" translate>Anonymous usage reports</label>
