@@ -18,6 +18,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Arak Team")]
 [assembly: AssemblyProduct("Arak.Data.Protection.TrayIcon")]
 [assembly: AssemblyCopyright("LGPL, Copyright ?")]
+
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
