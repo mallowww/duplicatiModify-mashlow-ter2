@@ -6,8 +6,8 @@
     <ProjectGuid>{17566860-3D98-4604-AA5B-47661F75609F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Duplicati.GUI.TrayIcon</RootNamespace>
-    <AssemblyName>Duplicati.GUI.TrayIcon</AssemblyName>
+    <RootNamespace>Arak.Data.Protection</RootNamespace>
+    <AssemblyName>Arak.Data.Protection</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
@@ -121,7 +121,6 @@
     <Compile Include="IBrowserWindow.cs" />
     <Compile Include="HostedInstanceKeeper.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HttpServerConnection.cs" />
     <None Include="app.config" />
     <None Include="app.manifest" />
@@ -131,6 +130,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>

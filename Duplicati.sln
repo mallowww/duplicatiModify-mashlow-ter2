@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29102.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Utility", "Duplicati\Library\Utility\Duplicati.Library.Utility.csproj", "{DE3E5D4C-51AB-4E5E-BEE8-E636CEBFBA65}"
 EndProject
@@ -43,7 +43,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Backend.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Server", "Duplicati\Server\Duplicati.Server.csproj", "{19E661D2-C5DA-4F35-B3EE-7586E5734B5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.GUI.TrayIcon", "Duplicati\GUI\Duplicati.GUI.TrayIcon\Duplicati.GUI.TrayIcon.csproj", "{17566860-3D98-4604-AA5B-47661F75609F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arak.Data.Protection", "Duplicati\GUI\Duplicati.GUI.TrayIcon\Arak.Data.Protection.csproj", "{17566860-3D98-4604-AA5B-47661F75609F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Server.Serialization", "Duplicati\Server\Duplicati.Server.Serialization\Duplicati.Server.Serialization.csproj", "{33FD1D24-C28F-4C71-933F-98F1586EA76C}"
 EndProject
@@ -67,12 +67,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Backend.G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Backend.OpenStack", "Duplicati\Library\Backend\OpenStack\Duplicati.Library.Backend.OpenStack.csproj", "{D9E4E686-423C-48EC-A392-404E7C00860C}"
 EndProject
-
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.CommandLine.RecoveryTool", "Duplicati\CommandLine\RecoveryTool\Duplicati.CommandLine.RecoveryTool.csproj", "{4A010589-76E6-4F05-A5C4-4598D5DF11F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Backend.Backblaze", "Duplicati\Library\Backend\Backblaze\Duplicati.Library.Backend.Backblaze.csproj", "{61C43D61-4368-4942-84A3-1EB623F4EF2A}"
 EndProject
-
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.Backend.Box", "Duplicati\Library\Backend\Box\Duplicati.Library.Backend.Box.csproj", "{3FF7DD0B-5284-4BF9-97D9-1E4417FDABB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicati.Library.UsageReporter", "Duplicati\Library\UsageReporter\Duplicati.Library.UsageReporter.csproj", "{BB014EA5-CE2C-4444-8D30-38983A0E8553}"
@@ -239,10 +237,6 @@ Global
 		{D9E4E686-423C-48EC-A392-404E7C00860C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9E4E686-423C-48EC-A392-404E7C00860C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9E4E686-423C-48EC-A392-404E7C00860C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D60AD540-0E7D-40CE-83AE-D26E01FFE9B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D60AD540-0E7D-40CE-83AE-D26E01FFE9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D60AD540-0E7D-40CE-83AE-D26E01FFE9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D60AD540-0E7D-40CE-83AE-D26E01FFE9B8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A010589-76E6-4F05-A5C4-4598D5DF11F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4A010589-76E6-4F05-A5C4-4598D5DF11F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A010589-76E6-4F05-A5C4-4598D5DF11F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -251,10 +245,6 @@ Global
 		{61C43D61-4368-4942-84A3-1EB623F4EF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61C43D61-4368-4942-84A3-1EB623F4EF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61C43D61-4368-4942-84A3-1EB623F4EF2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6643A5AE-AB38-453F-ADCE-408E35A81A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6643A5AE-AB38-453F-ADCE-408E35A81A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6643A5AE-AB38-453F-ADCE-408E35A81A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6643A5AE-AB38-453F-ADCE-408E35A81A83}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3FF7DD0B-5284-4BF9-97D9-1E4417FDABB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3FF7DD0B-5284-4BF9-97D9-1E4417FDABB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FF7DD0B-5284-4BF9-97D9-1E4417FDABB2}.Release|Any CPU.ActiveCfg = Release|Any CPU

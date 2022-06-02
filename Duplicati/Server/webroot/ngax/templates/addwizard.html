@@ -1,14 +1,16 @@
 <div ng-controller="AddWizardController" class="addwizard">
-    
-    <h1><div translate>Add a new backup</div></h1>
+
+    <h1>
+        <div translate>Add a new backup</div>
+    </h1>
 
     <form class="styled">
-    	<ul>
-    		<li class="input" ng-click="selection.style = 'blank'">
-	    		<input type="radio" name="blank" id="blank" ng-model="selection.style" value="blank">
-    			<label for="direct" translate>Configure a new backup</label>
-    			<div class="subtext" translate>Enter configuration details</div>
-    		</li>
+        <ul>
+            <li class="input" ng-click="selection.style = 'blank'">
+                <input type="radio" name="blank" id="blank" ng-model="selection.style" value="blank">
+                <label for="direct" translate>Configure a new backup</label>
+                <div class="subtext" translate>Enter configuration details</div>
+            </li>
 
             <li class="input" ng-click="selection.style = 'importfile'">
                 <input type="radio" name="blank" id="blank" ng-model="selection.style" value="importfile">
@@ -22,7 +24,7 @@
                 <div class="subtext">Import configuration from a backup folder</div>
             </li> -->
 
-    	</ul>
+        </ul>
 
         <div class="buttons">
             <input class="submit next" type="button" ng-click="nextPage()" value="{{'Next' | translate}} &gt;" />
