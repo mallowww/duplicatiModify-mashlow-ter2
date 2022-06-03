@@ -649,7 +649,8 @@ namespace Duplicati.Library.Main
                 if (!string.IsNullOrEmpty(v))
                     return v;
                     
-                return "duplicati";
+                   
+                return "Arak";
             }
         }
 
