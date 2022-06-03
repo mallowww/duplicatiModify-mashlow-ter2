@@ -242,18 +242,18 @@ if [ -f "${AUTHENTICODE_PFXFILE}" ] && [ -f "${AUTHENTICODE_PASSWORD}" ]; then
 	    exit 4
 	fi
 
-	# for exec in "${UPDATE_SOURCE}/Duplicati."*.exe; do
-	# 	authenticode_sign "${exec}"
-	# done
-	# for exec in "${UPDATE_SOURCE}/Duplicati."*.dll; do
-	# 	authenticode_sign "${exec}"
-	# done
-	for exec in "${UPDATE_SOURCE}/Arak."*.exe; do
+	for exec in "${UPDATE_SOURCE}/Duplicati."*.exe; do
 		authenticode_sign "${exec}"
 	done
-	for exec in "${UPDATE_SOURCE}/Arak."*.dll; do
+	for exec in "${UPDATE_SOURCE}/Duplicati."*.dll; do
 		authenticode_sign "${exec}"
 	done
+	# for exec in "${UPDATE_SOURCE}/Arak."*.exe; do
+	# 	authenticode_sign "${exec}"
+	# done
+	# for exec in "${UPDATE_SOURCE}/Arak."*.dll; do
+	# 	authenticode_sign "${exec}"
+	# done
 
 else
 	echo "Skipped authenticode signing as files are missing"

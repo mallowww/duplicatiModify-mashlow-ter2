@@ -23,7 +23,7 @@ namespace Duplicati.GUI.TrayIcon
                     // so we just throw a few out there and try them
                     if (args == null || !args.Any(x => x.Trim().StartsWith("--" + Duplicati.Server.WebServer.Server.OPTION_PORT + "=", StringComparison.OrdinalIgnoreCase)))
                         // args = (args ?? new string[0]).Union(new string[] { "--" + Duplicati.Server.WebServer.Server.OPTION_PORT + "=8200,8300,8400,8500,8600,8700,8800,8900,8989" }).ToArray();
-                        args = (args ?? new string[0]).Union(new string[] { "--" + Duplicati.Server.WebServer.Server.OPTION_PORT + "=4422,4500,4600,4700,4800,4900,4950,5000,8899" }).ToArray();
+                        args = (args ?? new string[0]).Union(new string[] { "--" + Duplicati.Server.WebServer.Server.OPTION_PORT + "=401,402,403,404,405,406,407,408,409" }).ToArray();
                         
                     Duplicati.Server.Program.Main(args);
                 } catch (Exception ex) {

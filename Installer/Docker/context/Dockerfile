@@ -3,13 +3,13 @@ FROM --platform=$TARGETPLATFORM ${PARENT_IMAGE}
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        curl \
-        mono-complete \
-        libmono-sqlite4.0-cil \
-        libmono-system-drawing4.0-cil \
-        libmono-system-net-http-webrequest4.0-cil \
-        libmono-system-web4.0-cil \
-        referenceassemblies-pcl && \
+    curl \
+    mono-complete \
+    libmono-sqlite4.0-cil \
+    libmono-system-drawing4.0-cil \
+    libmono-system-net-http-webrequest4.0-cil \
+    libmono-system-web4.0-cil \
+    referenceassemblies-pcl && \
     rm -rf /var/lib/apt/lists && \
     cert-sync /etc/ssl/certs/ca-certificates.crt
 
@@ -30,5 +30,5 @@ ENV DUPLICATI_CHANNEL=${CHANNEL}
 ENV DUPLICATI_VERSION=${VERSION}
 COPY duplicati /opt/duplicati
 
-EXPOSE 8200
+EXPOSE 401
 CMD ["/usr/bin/duplicati-server", "--webservice-port=8899", "--webservice-interface=any"]
