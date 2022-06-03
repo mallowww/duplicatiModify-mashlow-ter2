@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("A license text reader for Duplicati")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Duplicati Team")]
-[assembly: AssemblyProduct("Duplicati")]
+[assembly: AssemblyProduct("Arak")]
 [assembly: AssemblyCopyright("LGPL, Copyright © Duplicati Team 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
