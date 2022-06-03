@@ -34,7 +34,7 @@ class DuplicatiServer(object):
 
 
 if __name__ == '__main__':
-    ds = DuplicatiServer("http://localhost:8200/")
+    ds = DuplicatiServer("http://localhost:401/")
     r = None
     try:
         cmd = sys.argv[1]

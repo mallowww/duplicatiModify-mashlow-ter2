@@ -22,10 +22,10 @@ Images for the following OS/architecture combinations are available using Docker
 ## How to use this image
 
 ```console
-$ docker run -p 8200:8200 -v /some/path:/some/path duplicati/duplicati
+$ docker run -p 401:401 -v /some/path:/some/path duplicati/duplicati
 ```
 
-Then, open [http://localhost:8200](http://localhost:8200) on the host to access the Duplicati web interface and configure backups. Any host directory that you want to back up needs to be mounted into the container using the `-v` option.
+Then, open [http://localhost:401](http://localhost:401) on the host to access the Duplicati web interface and configure backups. Any host directory that you want to back up needs to be mounted into the container using the `-v` option.
 
 ### Preserving configuration
 
