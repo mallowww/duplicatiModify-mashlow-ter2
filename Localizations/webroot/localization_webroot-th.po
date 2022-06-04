@@ -901,6 +901,9 @@ msgid ""
 "            When deleting a backup, you can also delete the local database without affecting the ability to restore the remote files.\n"
 "            If you are using the local database for backups from the commandline, you should keep the database."
 msgstr ""
+"ข้อมูลสำรองแต่ละรายการมีฐานข้อมูลท้องถิ่นที่เกี่ยวข้อง ซึ่งเก็บข้อมูลเกี่ยวกับการสำรองข้อมูลระยะไกลบนเครื่องท้องถิ่น\n"
+"            เมื่อลบข้อมูลสำรอง คุณยังสามารถลบฐานข้อมูลในเครื่องได้โดยไม่กระทบต่อความสามารถในการกู้คืนไฟล์ระยะไกล\n"
+"            หากคุณกำลังใช้ฐานข้อมูลท้องถิ่นสำหรับการสำรองข้อมูลจาก commandline คุณควรเก็บฐานข้อมูลไว้"
 
 #: templates/localdatabase.html:8
 msgid ""
@@ -1378,6 +1381,8 @@ msgid ""
 "If you want to use the backup later, you can export the configuration before"
 " deleting it"
 msgstr ""
+"หากต้องการใช้ข้อมูลสำรองในภายหลัง คุณสามารถส่งออกการกำหนดค่าก่อน"
+“ลบได้”
 
 #: scripts/controllers/AppController.js:173
 msgid ""
@@ -1496,7 +1501,7 @@ msgstr "เดือนที่แล้ว"
 
 #: templates/home.html:53
 msgid "Last successful backup:"
-msgstr ""
+msgstr "การ backup ที่ทำเสร็จไปล่าสุดเมื่อ"
 
 #: templates/restorewizard.html:27
 msgid "Last successful restore: {{time}} (took {{duration || '0 seconds'}})"
@@ -1700,7 +1705,7 @@ msgstr "ชื่อ"
 
 #: templates/home.html:60
 msgid "Never"
-msgstr ""
+msgstr "ไม่เคย"
 
 #: templates/notificationarea.html:22
 msgid "New update found: {{message}}"
