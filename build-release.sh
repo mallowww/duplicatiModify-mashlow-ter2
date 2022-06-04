@@ -16,7 +16,8 @@ RELEASE_NAME="${RELEASE_VERSION}_${RELEASE_TYPE}_${RELEASE_TIMESTAMP}"
 RELEASE_CHANGELOG_FILE="changelog.txt"
 RELEASE_CHANGELOG_NEWS_FILE="changelog-news.txt"
 
-RELEASE_FILE_NAME="duplicati-${RELEASE_NAME}"
+# RELEASE_FILE_NAME="duplicati-${RELEASE_NAME}"
+RELEASE_FILE_NAME="Arak-${RELEASE_NAME}"
 
 GIT_STASH_NAME="auto-build-${RELEASE_TIMESTAMP}"
 
@@ -242,18 +243,18 @@ if [ -f "${AUTHENTICODE_PFXFILE}" ] && [ -f "${AUTHENTICODE_PASSWORD}" ]; then
 	    exit 4
 	fi
 
-	# for exec in "${UPDATE_SOURCE}/Duplicati."*.exe; do
-	# 	authenticode_sign "${exec}"
-	# done
-	# for exec in "${UPDATE_SOURCE}/Duplicati."*.dll; do
-	# 	authenticode_sign "${exec}"
-	# done
-	for exec in "${UPDATE_SOURCE}/Arak."*.exe; do
+	for exec in "${UPDATE_SOURCE}/Duplicati."*.exe; do
 		authenticode_sign "${exec}"
 	done
-	for exec in "${UPDATE_SOURCE}/Arak."*.dll; do
+	for exec in "${UPDATE_SOURCE}/Duplicati."*.dll; do
 		authenticode_sign "${exec}"
 	done
+	# for exec in "${UPDATE_SOURCE}/Arak."*.exe; do
+	# 	authenticode_sign "${exec}"
+	# done
+	# for exec in "${UPDATE_SOURCE}/Arak."*.dll; do
+	# 	authenticode_sign "${exec}"
+	# done
 
 else
 	echo "Skipped authenticode signing as files are missing"

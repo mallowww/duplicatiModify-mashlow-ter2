@@ -1,6 +1,7 @@
 <div class="home">
     <div class="tasks" ng-controller="HomeController">
-        <div class="pdpa" ng-show="pdpa">
+        <div ng-hide="state.programState == 'Running'" class="ng-hide">
+            <!-- <div class="pdpa ng-show" ng-show="pdpa"> -->
             <h1>การป้องกันข้อมูลสำคัญของเรา</h1>
             <div class="pdpa">
                 ซอฟท์แวร์นี้สามารถป้องกันข้อมูลส่วนบุคคล และข้อมูลอ่อนไหวส่วนบุคคล เป็นไปตามกฎหมาย พ.ร.บ.
@@ -8,16 +9,10 @@
                 ของประเทศไทย หรือเรียก PDPA (Privacy Data Protection Act)
                 รวมถึงการป้องกันข้อมูลสำคัญ โดยมีการทำการเข้ารหัสข้อมูล เพื่อเก็บ รวบรวม ใช้และเปิดเผย
                 ทั้งที่เก็บบันทึกในองค์กร หรือเก็บไว้ยังผู้ให้บริการคลาวด์ในต่างประเทศ
-
-                <div>
-                    <p>ร่วมรักษาอธิปไตยทางข้อมูล</p>
-                    <p>Arak Data Protection</p>
-                </div>
             </div>
-
         </div>
 
-        <div class="tasklist">
+        <div class=" tasklist">
             <div ng-repeat="item in backups" class="task">
                 <a href
                     ng-click="$parent.TaskMenuID == item.Backup.ID ? $parent.TaskMenuID = null : $parent.TaskMenuID = item.Backup.ID">
@@ -117,7 +112,8 @@
                             <div class="progress-small-bg">
                                 <div class="progress-small"
                                     style="width: {{(1 - (state.lastPgEvent.CurrentFilesize - state.lastPgEvent.CurrentFileoffset) / state.lastPgEvent.CurrentFilesize) * 200}}px">
-                                    {{(1 - (state.lastPgEvent.CurrentFilesize - state.lastPgEvent.CurrentFileoffset) /
+                                    {{(1 - (state.lastPgEvent.CurrentFilesize - state.lastPgEvent.CurrentFileoffset)
+                                    /
                                     state.lastPgEvent.CurrentFilesize) * 100 | number:2}}%
                                 </div>
                             </div>

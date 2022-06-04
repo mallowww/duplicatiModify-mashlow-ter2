@@ -1,7 +1,7 @@
 #import "run-with-mono.h"
 
-NSString * const ASSEMBLY = @"Duplicati.GUI.TrayIcon.exe";
-NSString * const APP_NAME = @"Duplicati";
+NSString * const ASSEMBLY = @"Arak.Data.Protection.exe";
+NSString * const APP_NAME = @"Arak";
 int const MONO_VERSION_MAJOR = 5;
 int const MONO_VERSION_MINOR = 0;
 

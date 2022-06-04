@@ -1,6 +1,7 @@
 backupApp.controller('HomeController', function ($scope, $location, ServerStatus, BackupList, AppService, AppUtils, DialogService, gettextCatalog) {
     $scope.backups = BackupList.watch($scope);
 
+    $scope.pdpa = true;
     $scope.doRun = function(id) {
         AppService.post('/backup/' + id + '/run').then(function() {
             if (ServerStatus.state.programState == 'Paused') {

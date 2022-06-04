@@ -10,11 +10,11 @@ namespace Duplicati.WindowsService
 {
     public class ServiceControl : System.ServiceProcess.ServiceBase
     {
-        private const string LOG_SOURCE = "Duplicati";
+        private const string LOG_SOURCE = "Arak";
         private const string LOG_NAME = "Application";
-        public const string SERVICE_NAME = "Duplicati";
-        public const string DISPLAY_NAME = "Duplicati service";
-        public const string DESCRIPTION = "Runs Duplicati as a service";
+        public const string SERVICE_NAME = "Arak";
+        public const string DISPLAY_NAME = "Arak service";
+        public const string DESCRIPTION = "Runs Arak as a service";
 
         private readonly System.Diagnostics.EventLog m_eventLog;
 
