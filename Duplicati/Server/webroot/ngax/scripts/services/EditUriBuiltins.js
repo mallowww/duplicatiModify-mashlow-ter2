@@ -22,17 +22,18 @@ backupApp.service('EditUriBuiltins', function (AppService, AppUtils, SystemInfo,
     EditUriBackendConfig.templates['msgroup'] = 'templates/backends/msgroup.html';
     EditUriBackendConfig.templates['openstack'] = 'templates/backends/openstack.html';
     EditUriBackendConfig.templates['azure'] = 'templates/backends/azure.html';
-    EditUriBackendConfig.templates['gcs'] = 'templates/backends/gcs.html';
-    EditUriBackendConfig.templates['b2'] = 'templates/backends/b2.html';
+    // EditUriBackendConfig.templates['gcs'] = 'templates/backends/gcs.html';
+    // EditUriBackendConfig.templates['b2'] = 'templates/backends/b2.html';
     // EditUriBackendConfig.templates['mega']        = 'templates/backends/mega.html';
-    EditUriBackendConfig.templates['jottacloud'] = 'templates/backends/jottacloud.html';
-    EditUriBackendConfig.templates['box'] = 'templates/backends/oauth.html';
+    // EditUriBackendConfig.templates['jottacloud'] = 'templates/backends/jottacloud.html';
+    EditUriBackendConfig.templates['SRAN Drive'] = 'templates/backends/jottacloud.html';
+    // EditUriBackendConfig.templates['box'] = 'templates/backends/oauth.html';
     EditUriBackendConfig.templates['dropbox'] = 'templates/backends/oauth.html';
-    EditUriBackendConfig.templates['sia'] = 'templates/backends/sia.html';
-    EditUriBackendConfig.templates['storj'] = 'templates/backends/storj.html';
-    EditUriBackendConfig.templates['tardigrade'] = 'templates/backends/tardigrade.html';
+    // EditUriBackendConfig.templates['sia'] = 'templates/backends/sia.html';
+    // EditUriBackendConfig.templates['storj'] = 'templates/backends/storj.html';
+    // EditUriBackendConfig.templates['tardigrade'] = 'templates/backends/tardigrade.html';
     EditUriBackendConfig.templates['rclone'] = 'templates/backends/rclone.html';
-    EditUriBackendConfig.templates['cos'] = 'templates/backends/cos.html';
+    // EditUriBackendConfig.templates['cos'] = 'templates/backends/cos.html';
 
     EditUriBackendConfig.testers['s3'] = function (scope, callback) {
 
