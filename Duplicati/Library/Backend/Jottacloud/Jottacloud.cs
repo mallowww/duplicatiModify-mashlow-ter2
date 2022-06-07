@@ -164,7 +164,7 @@ namespace Duplicati.Library.Backend
             if (m_userInfo != null) // Bugfix, see http://connect.microsoft.com/VisualStudio/feedback/details/695227/networkcredential-default-constructor-leaves-domain-null-leading-to-null-object-reference-exceptions-in-framework-code
                 m_userInfo.Domain = "";
             m_url_device = JFS_ROOT + "/" + m_userInfo.UserName + "/" + m_device;
-            m_url        = m_url_device + "/" + m_mountPoint + "/" + m_path;
+            m_url = m_url_device + "/" + m_mountPoint + "/" + m_path;
             m_url_upload = JFS_ROOT_UPLOAD + "/" + m_userInfo.UserName + "/" + m_device + "/" + m_mountPoint + "/" + m_path; // Different hostname, else identical to m_url.
 
             m_threads = int.Parse(options.ContainsKey(JFS_THREADS) ? options[JFS_THREADS] : JFS_DEFAULT_THREADS);
@@ -326,7 +326,7 @@ namespace Duplicati.Library.Backend
 
         public IList<ICommandLineArgument> SupportedCommands
         {
-            get 
+            get
             {
                 return new List<ICommandLineArgument>(new ICommandLineArgument[] {
                     new CommandLineArgument("auth-password", CommandLineArgument.ArgumentType.Password, Strings.Jottacloud.DescriptionAuthPasswordShort, Strings.Jottacloud.DescriptionAuthPasswordLong),
@@ -555,7 +555,8 @@ namespace Duplicati.Library.Backend
                         if (xFile != null)
                         {
                             var xRevState = xFile.SelectSingleNode("latestRevision");
-                            if (xRevState == null) {
+                            if (xRevState == null)
+                            {
                                 xRevState = xFile.SelectSingleNode("currentRevision/state");
                                 if (xRevState != null)
                                     uploadCompletedSuccessfully = xRevState.InnerText == "COMPLETED"; // Success: There is no "latestRevision", only a "currentRevision" (and it specifies the file is complete, but I think it always will).

@@ -62,8 +62,8 @@
                 <option value="m" translate>Minutes</option>
                 <option value="h" translate>Hours</option>
             </select>
-            <div class="sublabel" translate>Duplicati will run when started, but will remain in a paused state for the
-                duration. Duplicati will occupy minimal system resources and no backups will be run.</div>
+            <!-- <div class="sublabel" translate>Duplicati will run when started, but will remain in a paused state for the
+                duration. Duplicati will occupy minimal system resources and no backups will be run.</div> -->
         </div>
 
         <h2 translate>User interface settings</h2>
@@ -72,10 +72,10 @@
 
             <select id="userinterfacelanguage" ng-model="uiLanguage"
                 ng-options="item.Code as item.DisplayName + ' (' + item.Code + ', ' + item.EnglishName + ')' for item in SystemInfo.SupportedLocales">
-                <option value="">{{ SystemInfo.BrowserLocaleSupported ?
+                <!-- <option value="">{{ SystemInfo.BrowserLocaleSupported ?
                     lang_browser_default + " (" + SystemInfo.BrowserLocale.DisplayName + ", " +
                     SystemInfo.BrowserLocale.Code + ")" :
-                    lang_default + " (en, English)" }}</option>
+                    lang_default + " (en, English)" }}</option> -->
                 <option value="">{{ SystemInfo.BrowserLocaleSupported ?
                     lang_browser_default + " (" + SystemInfo.BrowserLocale.DisplayName + ", " +
                     SystemInfo.BrowserLocale.Code + ")" :
@@ -87,17 +87,10 @@
             <label for="themedisplay" translate>Display and color theme</label>
 
             <select id="themedisplay" ng-model="theme">
-                <option value="default" translate>The default blue on white theme (by Alex)</option>
-                <option value="dark" translate>The dark theme (by Michal)</option>
+                <option value="default" translate>The default theme</option>
+                <option value="dark" translate>The dark theme</option>
             </select>
         </div>
-
-        <!-- <h2 translate>Donation messages</h2>
-        <div class="input checkbox">
-            <label for="suppresDonationMessages" translate>Donation messages</label>
-            <a href ng-click="suppressDonationMessages()" ng-show="!SystemInfo.SuppressDonationMessages" translate>Donation messages are visible, click to hide</a>
-            <a href ng-click="displayDonationMessages()" ng-show="SystemInfo.SuppressDonationMessages" translate>Donation messages are hidden, click to show</a>
-        </div> -->
 
         <h2 ng-if="SystemInfo.DefaultUsageReportLevel != 'Disabled'" translate>Usage statistics</h2>
         <div ng-if="SystemInfo.DefaultUsageReportLevel != 'Disabled'" class="input mixed multiple">
@@ -121,7 +114,8 @@
                 <p translate>All usage reports are sent anonymously and do not contain any personal information. They
                     contain information about hardware and operating system, the type of backend, backup duration,
                     overall size of source data and similar data. They do not contain paths, filenames, usernames,
-                    passwords or similar sensitive information.</p>
+                    passwords or similar sensitive information.
+                </p>
             </div>
         </div>
 
