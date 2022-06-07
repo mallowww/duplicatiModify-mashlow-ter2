@@ -9,6 +9,7 @@
     </ul>
 
     <div ng-show="Page == 'general'">
+<<<<<<< HEAD
         <div>&nbsp;</div>
             <ul>
                 <li>
@@ -24,10 +25,22 @@
                 </li>
             </ul>
 
+=======
+>>>>>>> 9771f7b966dd0cd1145152410ca905bf425a7993
         <div>&nbsp;</div>
-        <div translate translate-params-appname="brandingService.appName"
-            translate-params-version="sysinfo.ServerVersionName || 'unknown'">You are currently running {{appname}}
-            {{version}}</div>
+        <ul>
+            <li>
+                <p><b>นายนนทวัตต์ สาระมาน นายกสมาคมส่งเสริมนวัตกรรมเทคโนโลยีไซเบอร์ CIPAT</b></p>
+                <p>ณัฐริกา ผายเงิน Project Manager(PM)</p>
+                <p>นายกานต์ สายบัวทอง (เตอร์)</p>
+                <p>นายชานนทร์ บัวทัน (มาร์ค)</p>
+                <p>นางสาวศิรินภา ไชยสิทธิ์ (นุ่ม)</p>
+                <p>นางสาวอลิศา ฉัตรชูเกียรติกุล (ส้ม)</p>
+                <p>นายธนพล รักพุทธะ (ปั้น)</p>
+                <p>นางสาวศิรินาถ ยอดนิล (ชมพู่)</p>
+                <p>นางสาวชลธิชา บุญเพ็ง (มิ้น) </p>
+            </li>
+        </ul>
 
         <div
             ng-show="state.updatedVersion != null &amp;&amp; !state.updateReady &amp;&amp; state.updaterState == 'Waiting'">
@@ -40,9 +53,9 @@
                 ng-click="doStartUpdateActivate()">activate now</a>
         </div>
 
-        <a ng-show="state.updaterState == 'Waiting'" href ng-click="doCheckForUpdates()" translate>Check for updates
+        <!-- <a ng-show="state.updaterState == 'Waiting'" href ng-click="doCheckForUpdates()" translate>Check for updates
             now</a>
-        <div ng-show="state.updaterState == 'Checking'" translate>Checking for updates …</div>
+        <div ng-show="state.updaterState == 'Checking'" translate>Checking for updates …</div> -->
 
         <progress-bar ng-show="state.updaterState == 'Downloading'" ng-text="'Downloading update …'" ,
             ng-progress="state.updateDownloadProgress">

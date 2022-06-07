@@ -62,8 +62,13 @@
                 <option value="m" translate>Minutes</option>
                 <option value="h" translate>Hours</option>
             </select>
+<<<<<<< HEAD
             <div class="sublabel" translate>Arak will run when started, but will remain in a paused state for the
                 duration. Arak will occupy minimal system resources and no backups will be run.</div>
+=======
+            <!-- <div class="sublabel" translate>Duplicati will run when started, but will remain in a paused state for the
+                duration. Duplicati will occupy minimal system resources and no backups will be run.</div> -->
+>>>>>>> 9771f7b966dd0cd1145152410ca905bf425a7993
         </div>
 
         <h2 translate>User interface settings</h2>
@@ -72,11 +77,16 @@
 
             <select id="userinterfacelanguage" ng-model="uiLanguage"
                 ng-options="item.Code as item.DisplayName + ' (' + item.Code + ', ' + item.EnglishName + ')' for item in SystemInfo.SupportedLocales">
-                <option value="">{{ SystemInfo.BrowserLocaleSupported ?
+                <!-- <option value="">{{ SystemInfo.BrowserLocaleSupported ?
                     lang_browser_default + " (" + SystemInfo.BrowserLocale.DisplayName + ", " +
                     SystemInfo.BrowserLocale.Code + ")" :
+<<<<<<< HEAD
                     lang_default + " (en, English)" }}</option>
                 <option value="" selected="selected">{{ SystemInfo.BrowserLocaleSupported ?
+=======
+                    lang_default + " (en, English)" }}</option> -->
+                <option value="">{{ SystemInfo.BrowserLocaleSupported ?
+>>>>>>> 9771f7b966dd0cd1145152410ca905bf425a7993
                     lang_browser_default + " (" + SystemInfo.BrowserLocale.DisplayName + ", " +
                     SystemInfo.BrowserLocale.Code + ")" :
                     lang_default + " (th, Thai)" }}</option>
@@ -87,12 +97,15 @@
             <label for="themedisplay" translate>Display and color theme</label>
 
             <select id="themedisplay" ng-model="theme">
-                <option value="default" translate>The default blue on white theme (by Alex)</option>
-                <option value="dark" translate>The dark theme (by Michal)</option>
+                <option value="default" translate>The default theme</option>
+                <option value="dark" translate>The dark theme</option>
             </select>
         </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9771f7b966dd0cd1145152410ca905bf425a7993
         <h2 ng-if="SystemInfo.DefaultUsageReportLevel != 'Disabled'" translate>Usage statistics</h2>
         <div ng-if="SystemInfo.DefaultUsageReportLevel != 'Disabled'" class="input mixed multiple">
             <label for="usagereporterlevel" translate>Anonymous usage reports</label>
@@ -111,6 +124,15 @@
                     use them to generate <external-link link="'https://usage-reporter.duplicati.com/'">{{'public usage
                         statistics' | translate}}</external-link>
                 </p>
+<<<<<<< HEAD
+=======
+
+                <p translate>All usage reports are sent anonymously and do not contain any personal information. They
+                    contain information about hardware and operating system, the type of backend, backup duration,
+                    overall size of source data and similar data. They do not contain paths, filenames, usernames,
+                    passwords or similar sensitive information.
+                </p>
+>>>>>>> 9771f7b966dd0cd1145152410ca905bf425a7993
             </div>
         </div>
 
