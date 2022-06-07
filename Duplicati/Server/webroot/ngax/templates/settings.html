@@ -62,8 +62,8 @@
                 <option value="m" translate>Minutes</option>
                 <option value="h" translate>Hours</option>
             </select>
-            <div class="sublabel" translate>Duplicati will run when started, but will remain in a paused state for the
-                duration. Duplicati will occupy minimal system resources and no backups will be run.</div>
+            <div class="sublabel" translate>Arak will run when started, but will remain in a paused state for the
+                duration. Arak will occupy minimal system resources and no backups will be run.</div>
         </div>
 
         <h2 translate>User interface settings</h2>
@@ -76,7 +76,7 @@
                     lang_browser_default + " (" + SystemInfo.BrowserLocale.DisplayName + ", " +
                     SystemInfo.BrowserLocale.Code + ")" :
                     lang_default + " (en, English)" }}</option>
-                <option value="">{{ SystemInfo.BrowserLocaleSupported ?
+                <option value="" selected="selected">{{ SystemInfo.BrowserLocaleSupported ?
                     lang_browser_default + " (" + SystemInfo.BrowserLocale.DisplayName + ", " +
                     SystemInfo.BrowserLocale.Code + ")" :
                     lang_default + " (th, Thai)" }}</option>
@@ -92,12 +92,6 @@
             </select>
         </div>
 
-        <!-- <h2 translate>Donation messages</h2>
-        <div class="input checkbox">
-            <label for="suppresDonationMessages" translate>Donation messages</label>
-            <a href ng-click="suppressDonationMessages()" ng-show="!SystemInfo.SuppressDonationMessages" translate>Donation messages are visible, click to hide</a>
-            <a href ng-click="displayDonationMessages()" ng-show="SystemInfo.SuppressDonationMessages" translate>Donation messages are hidden, click to show</a>
-        </div> -->
 
         <h2 ng-if="SystemInfo.DefaultUsageReportLevel != 'Disabled'" translate>Usage statistics</h2>
         <div ng-if="SystemInfo.DefaultUsageReportLevel != 'Disabled'" class="input mixed multiple">
@@ -117,11 +111,6 @@
                     use them to generate <external-link link="'https://usage-reporter.duplicati.com/'">{{'public usage
                         statistics' | translate}}</external-link>
                 </p>
-
-                <p translate>All usage reports are sent anonymously and do not contain any personal information. They
-                    contain information about hardware and operating system, the type of backend, backup duration,
-                    overall size of source data and similar data. They do not contain paths, filenames, usernames,
-                    passwords or similar sensitive information.</p>
             </div>
         </div>
 
@@ -139,25 +128,6 @@
                 <input type="text" title="{{opt.LongDescription}}" name="{{module.Key}}-{{opt.Name}}"
                     id="{{module.Key}}-{{opt.Name}}" ng-model="servermodulesettings[opt.Name]" />
             </div>
-        </div>
-
-        <h2 translate>Default options</h2>
-        <div class="sublabel">
-            <p translate>Options added here are applied to all backups, but can be overridden in each individual backup
-            </p>
-        </div>
-        <div class="input textarea" ng-show="ShowAdvancedTextArea">
-            <label for="backupOptions" translate>Options</label>
-            <a href ng-click="ShowAdvancedTextArea = false" class="advanced-toggle" translate>Edit as list</a>
-            <textarea id="backupOptions" ng-model="advancedOptions" string-array-as-text
-                placeholder="{{AppUtils.format(AppUtils.exampleOptionString, '--dblock-size=100MB')}}"></textarea>
-        </div>
-
-        <div class="input" ng-hide="ShowAdvancedTextArea">
-            <label for="backupOptions" translate>Options</label>
-            <a href ng-click="ShowAdvancedTextArea = true" class="advanced-toggle" translate>Edit as text</a>
-            <advanced-options-editor ng-option-list="advancedOptionList" ng-model="advancedOptions">
-            </advanced-options-editor>
         </div>
 
         <div class="buttons">

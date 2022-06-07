@@ -864,7 +864,7 @@ msgid "Duplicati forum"
 msgstr ""
 
 #: templates/settings.html:53
-msgid "Duplicati will run when started, but will remain in a paused state for the duration. Duplicati will occupy minimal system resources and no backups will be run."
+msgid "Arak will run when started, but will remain in a paused state for the duration. Arak will occupy minimal system resources and no backups will be run."
 msgstr ""
 
 #: templates/backup-result/phases/compact.html:16

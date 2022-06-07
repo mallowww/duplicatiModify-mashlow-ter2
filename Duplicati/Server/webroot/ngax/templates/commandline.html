@@ -22,7 +22,7 @@
                 <textarea id="arguments" ng-model="Arguments" string-array-as-text placeholder="Enter one argument per line without quotes, e.g. *.txt"></textarea>
             </div>
 
-            <div class="input textarea" ng-show="ShowAdvancedTextArea">
+            <!-- <div class="input textarea" ng-show="ShowAdvancedTextArea">
                 <label for="backupOptions">Advanced options</label>
                 <div>
                     <a href ng-click="ShowAdvancedTextArea = false" class="advanced-toggle"><i class="fa fa-check"></i> Edit as text</a>
@@ -34,7 +34,7 @@
                 <label for="backupOptions">Advanced options</label>
                 <a href ng-click="ShowAdvancedTextArea = true" class="advanced-toggle"><i class="fa"></i> Edit as text</a>
                 <advanced-options-editor ng-option-list="ExtendedOptionList" ng-model="ExtendedOptions"></advanced-options-editor>
-            </div>
+            </div> -->
 
             <div class="buttons">
                 <input class="submit run" type="submit" id="run" ng-click="run()" value="Run &quot;{{Command}}&quot; command now" />
