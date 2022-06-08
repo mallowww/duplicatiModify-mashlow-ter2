@@ -877,12 +877,12 @@ msgstr ""
 
 #: templates/settings.html:53
 msgid ""
-"Arak will run when started, but will remain in a paused state for the "
-"duration. Arak will occupy minimal system resources and no backups will"
+"Duplicati will run when started, but will remain in a paused state for the "
+"duration. Duplicati will occupy minimal system resources and no backups will"
 " be run."
 msgstr ""
-"Arak จะทำงานเมื่อเริ่มต้น แต่จะยังคงอยู่ในสถานะหยุดชั่วคราวใน "
-"ระยะเวลาหนึ่ง Arak จะใช้ทรัพยากรระบบอย่างน้อยที่สุดและจะไม่มีการสำรองข้อมูล"
+"Duplicati จะทำงานเมื่อเริ่มต้น แต่จะยังคงอยู่ในสถานะหยุดชั่วคราวใน "
+"ระยะเวลาหนึ่ง Duplicati จะใช้ทรัพยากรระบบอย่างน้อยที่สุดและจะไม่มีการสำรองข้อมูล"
 "ใดทำงานในระยะเวลานี้"
 
 #: templates/backup-result/phases/compact.html:16
@@ -901,6 +901,11 @@ msgid ""
 "            When deleting a backup, you can also delete the local database without affecting the ability to restore the remote files.\n"
 "            If you are using the local database for backups from the commandline, you should keep the database."
 msgstr ""
+<<<<<<< HEAD
+379 / 5,000
+Translation results
+=======
+>>>>>>> origin/mallo
 "ข้อมูลสำรองแต่ละรายการมีฐานข้อมูลท้องถิ่นที่เกี่ยวข้อง ซึ่งเก็บข้อมูลเกี่ยวกับการสำรองข้อมูลระยะไกลบนเครื่องท้องถิ่น\n"
 "            เมื่อลบข้อมูลสำรอง คุณยังสามารถลบฐานข้อมูลในเครื่องได้โดยไม่กระทบต่อความสามารถในการกู้คืนไฟล์ระยะไกล\n"
 "            หากคุณกำลังใช้ฐานข้อมูลท้องถิ่นสำหรับการสำรองข้อมูลจาก commandline คุณควรเก็บฐานข้อมูลไว้"
