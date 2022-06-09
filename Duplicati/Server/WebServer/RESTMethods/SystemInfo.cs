@@ -107,14 +107,14 @@ namespace Duplicati.Server.WebServer.RESTMethods
                 BrowserLocale = new
                 {
                     Code = browserlanguage.Name,
-                    EnglishName = browserlanguage.EnglishName,
+                    // EnglishName = browserlanguage.EnglishName,
                     DisplayName = browserlanguage.NativeName
                 },
                 SupportedLocales = 
                     Library.Localization.LocalizationService.SupportedCultures
                             .Select(x => new { 
                                 Code = x, 
-                                EnglishName = new System.Globalization.CultureInfo(x).EnglishName,
+                                // EnglishName = new System.Globalization.CultureInfo(x).EnglishName,
                                 DisplayName = new System.Globalization.CultureInfo(x).NativeName
                                 }
                             ),

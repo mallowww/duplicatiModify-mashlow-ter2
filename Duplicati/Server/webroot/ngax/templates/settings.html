@@ -72,10 +72,10 @@
 
             <select id="userinterfacelanguage" ng-model="uiLanguage"
                 ng-options="item.Code as item.DisplayName + ' (' + item.Code + ', ' + item.EnglishName + ')' for item in SystemInfo.SupportedLocales">
-                <option value="">{{ SystemInfo.BrowserLocaleSupported ?
+                <!-- <option value="">{{ SystemInfo.BrowserLocaleSupported ?
                     lang_browser_default + " (" + SystemInfo.BrowserLocale.DisplayName + ", " +
                     SystemInfo.BrowserLocale.Code + ")" :
-                    lang_default + " (en, English)" }}</option>
+                    lang_default + " (en, English)" }}</option> -->
                 <option value="" selected="selected">{{ SystemInfo.BrowserLocaleSupported ?
                     lang_browser_default + " (" + SystemInfo.BrowserLocale.DisplayName + ", " +
                     SystemInfo.BrowserLocale.Code + ")" :
@@ -87,8 +87,8 @@
             <label for="themedisplay" translate>Display and color theme</label>
 
             <select id="themedisplay" ng-model="theme">
-                <option value="default" translate>The default blue on white theme (by Alex)</option>
-                <option value="dark" translate>The dark theme (by Michal)</option>
+                <option value="default" translate>The default theme (by Ter)</option>
+                <!-- <option value="dark" translate>The dark theme (by Michal)</option> -->
             </select>
         </div>
 
