@@ -15,10 +15,10 @@
                 autocomplete="new-password" />
         </div>
         <div class="input checkbox">
-            <input type="checkbox" class="checkbox" id="remote" name="remote" ng-model="allowRemoteAccess" />
+            <input type="checkbox" class="checkbox" id="remote" name="remote" ng-model="allowRemoteAccess" translate/>
             <label for="remote" translate>Allow remote access (requires restart)</label>
-            <div class="sublabel" translate>By allowing remote access, the server listens to requests from any machine
-                on your network. If you enable this option, make sure you are always using the computer on a secure
+            <div class="sublabel" translate>By allowing remote access, the server listens to requests from any machine 
+                on your network. If you enable this option, make sure you are always using the computer on a secure 
                 firewall protected network.</div>
         </div>
         <div class="input mixed multiple" ng-show="allowRemoteAccess">
@@ -87,7 +87,7 @@
             <label for="themedisplay" translate>Display and color theme</label>
 
             <select id="themedisplay" ng-model="theme">
-                <option value="default" translate>The default theme (by Ter)</option>
+                <option value="default" translate>The default theme (by KAINOOM)</option>
                 <!-- <option value="dark" translate>The dark theme (by Michal)</option> -->
             </select>
         </div>

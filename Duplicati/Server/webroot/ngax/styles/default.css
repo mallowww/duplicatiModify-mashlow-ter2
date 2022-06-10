@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Clear Sans';
     src: url('../fonts/ClearSans-Light-webfont.eot');
     src: url('../fonts/ClearSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ClearSans-Light-webfont.woff') format('woff'), url('../fonts/ClearSans-Light-webfont.ttf') format('truetype'), url('../fonts/ClearSans-Light-webfont.svg#clear_sans_lightregular') format('svg');
@@ -28,7 +28,7 @@
     src: url('../fonts/ClearSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ClearSans-Bold-webfont.woff') format('woff'), url('../fonts/ClearSans-Bold-webfont.ttf') format('truetype'), url('../fonts/ClearSans-Bold-webfont.svg#clear_sansbold') format('svg');
     font-weight: 700;
     font-style: normal
-}
+} */
 
 form.styled div.leftflush input {
     width: auto;
@@ -50,13 +50,13 @@ form.styled label {
 form.styled input,
 form.styled textarea,
 form.styled select {
-    color: #505050;
+    color: #339999;
     font-size: 16px;
     font-weight: 300;
     float: left;
     display: block;
     border: 1px #d8d8d8 solid;
-    border-radius: 2px;
+    border-radius: 10px;
     width: 420px
 }
 
@@ -122,10 +122,14 @@ form.styled .buttons {
     float: right
 }
 
+a#cancel {
+    border-radius: 10px;
+}
+
 form.styled .buttons input,
 form.styled .buttons a {
     display: block;
-    background: #277DB0;
+    background: #277db0;
     color: white !important;
     padding: 5px 15px;
     float: right;
@@ -133,10 +137,10 @@ form.styled .buttons a {
     cursor: pointer;
     width: auto;
     border: none;
-    font-family: 'Clear Sans', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    border-radius: 0
+    border-radius: 10
 }
 
 form.styled .buttons input {
@@ -2881,7 +2885,7 @@ form.styled .buttons a:hover {
 }
 
 * {
-    font-family: 'Clear Sans', sans-serif
+    font-family: 'Trebuchet MS', sans-serif
 }
 
 html,
@@ -2894,7 +2898,7 @@ body {
 h1,
 h2 {
     font-weight: 300;
-    color: #568301
+    color: #063
 }
 
 h1 {
@@ -2994,7 +2998,7 @@ only screen and (min-resolution:2.25dppx) {
 
 .button {
     display: block;
-    background: #277DB0;
+    background: #d170ab;
     color: white !important;
     padding: 5px 15px;
     float: right;
@@ -3002,7 +3006,7 @@ only screen and (min-resolution:2.25dppx) {
     cursor: pointer;
     width: auto;
     border: none;
-    font-family: 'Clear Sans', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-weight: 300;
     border-radius: 0
@@ -3441,10 +3445,10 @@ body .container {
 }
 
 body .container .header {
-    line-height: 70px;
-    background: #ededed;
+    line-height: 70px; 
+    background: #eceff1;
     overflow: hidden;
-    height: 70px;
+    height: 100px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -3465,30 +3469,34 @@ body .container .header .logo {
     font-size: 30px;
     font-weight: 700;
     float: left;
+    margin-top: 10px;
     padding-left: 40px
 }
 
 body .container .header .statepadding {
     padding-right: 90px;
-    margin-left: 320px
+    margin-left: 500px
 }
 
 body .container .header .state {
     float: left;
-    color: #355001;
-    width: 595px;
-    padding: 13px 15px;
-    margin: 10px 20px;
-    border: 1px #355001 solid;
+    color: #000000;
+    width: 700px;
+    padding: 15px 15px;
+    margin: 22px 20px;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    border-radius: 25px;
+    /* border: 1px #355001 solid; */
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
     overflow: hidden;
     line-height: normal;
     display: inline-block;
     background-color: white;
     text-overflow: ellipsis;
     position: relative;
-    height: 25px
+    height: 30px
 }
 
 body .container .header .state strong {
@@ -3598,9 +3606,9 @@ body .container .header .state .task-state-info {
 body .container .header .action-icons {
     display: inline-block;
     line-height: normal;
-    margin: 10px 0px;
+    margin: 22px 0px;
     padding: 13px 0px;
-    float: left
+    float: right
 }
 
 body .container .header .action-icons-small {
@@ -3746,19 +3754,29 @@ body .container .body {
     width: 100%;
     overflow: hidden;
     min-height: 500px;
-    padding-top: 120px;
+    padding-top: 75px;
     padding-bottom: 70px
 }
 
 body .container .body a {
-    color: #277DB0
+    color: #2A505A
 }
 
 body .container .body .mainmenu {
-    width: 260px;
-    padding-left: 40px;
+    background-color: #eceff1 !important;
+    width: 250px;
+    height: 100%;
+    top: 100px;
+    /* border-right: 1px solid black; */
+    padding-left: 25px;
     float: left;
+    line-height: 1.6;
     position: fixed
+}
+
+body .container .body .mainmenu #about {
+    bottom: 10px;
+    position: fixed;
 }
 
 body .container .body .mainmenu>ul>li {
@@ -3928,7 +3946,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.home.active {
-    background: #4ca4d7 url('../img/mainmenu/over/home.png') no-repeat 8px 7px;
+    background: #68bbeb url('../img/mainmenu/over/home.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -3949,7 +3967,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.add.active {
-    background: #4ca4d7 url('../img/mainmenu/over/add.png') no-repeat 8px 7px;
+    background: #68bbeb    url('../img/mainmenu/over/add.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -3970,7 +3988,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.restore.active {
-    background: #4ca4d7 url('../img/mainmenu/over/restore.png') no-repeat 8px 7px;
+    background: #68bbeb    url('../img/mainmenu/over/restore.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -3991,7 +4009,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.resume.active {
-    background: #4ca4d7 url('../img/mainmenu/over/resume.png') no-repeat 8px 7px;
+    background: #68bbeb    url('../img/mainmenu/over/resume.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4012,7 +4030,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.settings.active {
-    background: #4ca4d7 url('../img/mainmenu/over/settings.png') no-repeat 8px 7px;
+    background: #68bbeb    url('../img/mainmenu/over/settings.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4033,7 +4051,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.about.active {
-    background: #4ca4d7 url('../img/mainmenu/over/about.png') no-repeat 8px 7px;
+    background: #68bbeb    url('../img/mainmenu/over/about.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4054,7 +4072,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.add:hover {
-    background: #277DB0 url('../img/mainmenu/over/add.png') no-repeat 8px 7px;
+    background: #4ca4d7 url('../img/mainmenu/over/add.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4075,7 +4093,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.restore:hover {
-    background: #277DB0 url('../img/mainmenu/over/restore.png') no-repeat 8px 7px;
+    background: #4ca4d7 url('../img/mainmenu/over/restore.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4096,7 +4114,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.resume:hover {
-    background: #277DB0 url('../img/mainmenu/over/resume.png') no-repeat 8px 7px;
+    background: #4ca4d7 url('../img/mainmenu/over/resume.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4117,7 +4135,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.settings:hover {
-    background: #277DB0 url('../img/mainmenu/over/settings.png') no-repeat 8px 7px;
+    background: #4ca4d7 url('../img/mainmenu/over/settings.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4159,7 +4177,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.home:hover {
-    background: #277DB0 url('../img/mainmenu/over/home.png') no-repeat 8px 7px;
+    background: #4ca4d7 url('../img/mainmenu/over/home.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4180,7 +4198,7 @@ only screen and (min-resolution:2.25dppx) {
 }
 
 body .container .body .mainmenu>ul>li>a.about:hover {
-    background: #277DB0 url('../img/mainmenu/over/about.png') no-repeat 8px 7px;
+    background: #4ca4d7 url('../img/mainmenu/over/about.png') no-repeat 8px 7px;
     background-size: 27px 26px
 }
 
@@ -4222,6 +4240,7 @@ body .container .body .contextmenu {
 
 body .container .body .contextmenu li a {
     color: #277DB0;
+    margin-top: 130px;
     font-size: 15px;
     font-weight: 400;
     padding: 0;
@@ -4247,7 +4266,8 @@ body .container .body .content {
     float: left;
     padding-left: 350px;
     padding-bottom: 50px;
-    max-width: 70%
+    max-width: 70%;
+    padding-top: 70px;
 }
 
 body .container .body .content ul.tabs>li {
@@ -4379,7 +4399,7 @@ body .container .body .content div.restore .steps .step span {
     display: block;
     border: 4px #c7e5f6 solid;
     background: white;
-    border-radius: 50%;
+    border-radius: 10%;
     width: 35px;
     height: 35px;
     text-align: center;
@@ -4618,7 +4638,7 @@ body .container .body .content div.restore .steps-boxes .step5 .advancedoptions 
     cursor: pointer;
     width: auto;
     border: none;
-    font-family: 'Clear Sans', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-weight: 300;
     border-radius: 0
@@ -5111,12 +5131,12 @@ div.modal-dialog div.info {
 
 div.connection-lost div.title,
 div.modal-dialog div.title {
-    border: 1px solid #65b1dd;
-    background-color: #65b1dd;
+    border: 1px solid #d170ab;
+    background-color: #d170ab;
     border-radius: 5px 5px 0 0;
     padding: 10px 20px;
     font-weight: bold;
-    color: lightgray;
+    color: white;
     text-align: center
 }
 
@@ -6104,6 +6124,11 @@ only screen and (min-resolution:2.25dppx) {
     body .container .header .menubutton span {
         display: none
     }
+}
+
+body {
+    background-color: #ffffff !important;
+    /* color: #B0B0B0 */
 }
 
 @media (max-width:325px) {

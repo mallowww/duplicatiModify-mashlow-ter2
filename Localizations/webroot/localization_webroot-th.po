@@ -877,7 +877,7 @@ msgstr ""
 
 #: templates/settings.html:53
 msgid ""
-"Duplicati will run when started, but will remain in a paused state for the "
+"Arak will run when started, but will remain in a paused state for the "
 "duration. Duplicati will occupy minimal system resources and no backups will"
 " be run."
 msgstr ""
@@ -901,11 +901,6 @@ msgid ""
 "            When deleting a backup, you can also delete the local database without affecting the ability to restore the remote files.\n"
 "            If you are using the local database for backups from the commandline, you should keep the database."
 msgstr ""
-<<<<<<< HEAD
-379 / 5,000
-Translation results
-=======
->>>>>>> origin/mallo
 "ข้อมูลสำรองแต่ละรายการมีฐานข้อมูลท้องถิ่นที่เกี่ยวข้อง ซึ่งเก็บข้อมูลเกี่ยวกับการสำรองข้อมูลระยะไกลบนเครื่องท้องถิ่น\n"
 "            เมื่อลบข้อมูลสำรอง คุณยังสามารถลบฐานข้อมูลในเครื่องได้โดยไม่กระทบต่อความสามารถในการกู้คืนไฟล์ระยะไกล\n"
 "            หากคุณกำลังใช้ฐานข้อมูลท้องถิ่นสำหรับการสำรองข้อมูลจาก commandline คุณควรเก็บฐานข้อมูลไว้"
@@ -975,9 +970,9 @@ msgstr "ใส่ URL"
 msgid ""
 "Enter a retention strategy manually. Placeholders are D/W/Y for "
 "days/weeks/years and U for unlimited. The syntax is: 7D:1D,4W:1W,36M:1M. "
-"This example keeps one backup for each of the next 7 days, one for each of "
+"This \nexample keeps one backup for each of the next 7 days, one for each of "
 "the next 4 weeks, and one for each of the next 36 months. This can also be "
-"written as 1W:1D,1M:1W,3Y:1M."
+"\nwritten as 1W:1D,1M:1W,3Y:1M."
 msgstr ""
 "ป้อนกลยุทธ์การเก็บรักษาด้วยตนเอง ตัวยึดตำแหน่งคือ D/W/Y สำหรับ "
 "วัน/สัปดาห์/ปี และ U สำหรับไม่จำกัด(unlimited) ไวยากรณ์คือ: 7D:1D,4W:1W,36M:1M "
@@ -1793,7 +1788,7 @@ msgstr ""
 
 #: index.html:196
 msgid "No scheduled tasks"
-msgstr ""
+msgstr "ยังไม่มีงานที่ถูกกำหนดให้ทำงาน"
 
 #: scripts/controllers/AppController.js:174
 msgid "No, my machine has only a single account"
@@ -1834,7 +1829,7 @@ msgid ""
 "are deleted."
 msgstr ""
 "เมื่อมีข้อมูลสำรองมากกว่าจำนวนที่กำหนด ข้อมูลสำรองที่เก่าที่สุด"
-"จะถูกลบ"
+"จะถูกลบออก"
 
 #: templates/backends/openstack.html:7
 msgid "OpenStack AuthURI"
@@ -1904,9 +1899,9 @@ msgid ""
 "backup for each of the last 7 days, each of the last 4 weeks, each of the "
 "last 12 months. There will always be at least one remaining backup."
 msgstr ""
-"ข้อมูลสำรองเมื่อเวลาผ่านไปจะถูกลบโดยอัตโนมัติ โดยจะเหลือเพียงรายการเดียว"
-"สำรองข้อมูลแต่ละช่วง 7 วันที่ผ่านมา แต่ละช่วง 4 สัปดาห์ที่ผ่านมาแต่ละ"
-"12 เดือนที่ผ่านมา จะมีข้อมูลสำรองอย่างน้อยหนึ่งรายการเสมอ"
+"ข้อมูลสำรองเมื่อเวลาผ่านไปจะถูกลบโดยอัตโนมัติ โดยจะมีข้อมูลสำรองหนึ่งรายการสำหรับ"
+"สำรองข้อมูลแต่ละช่วง 7 วันที่ผ่านมา แต่ละช่วง 4 สัปดาห์ที่ผ่านมา "
+"แต่ละช่วง 12 เดือนที่ผ่านมา จะมีข้อมูลสำรองที่เหลืออยู่อย่างน้อยหนึ่งรายการเสมอ"
 
 #: templates/restore.html:114
 msgid "Overwrite"
@@ -3169,7 +3164,7 @@ msgstr "ต้องป้อนระยะเวลาที่ถูกต้
 
 #: scripts/controllers/EditBackupController.js:305
 msgid "You must enter a valid retention policy string"
-msgstr "ต้องป้อนข้อความนโยบายการเก็บรักษาที่ถูกต้อง"
+msgstr "ต้องป้อนข้อความตามนโยบายการเก็บรักษาที่ถูกต้องตามคำอธิบาย"
 
 #: scripts/services/EditUriBuiltins.js:928
 msgid "You must enter either a password or an API Key"

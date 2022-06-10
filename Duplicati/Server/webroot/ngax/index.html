@@ -39,6 +39,8 @@
     <script type="text/javascript" src="scripts/libs/zxcvbn.js"></script>
     <script>
         if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) {
+            /* Microsoft Internet Explorer detected in. */
+            /* Bluebird is necessary to make Promises work in IE */
             document.write('<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js" ></scr' + 'ipt>');
         }
     </script>
@@ -137,12 +139,11 @@
 
     <div class="container">
         <div class="header">
-            <div class="logo">
+            <div class="logo" id = "logo">
                 <a href="#/">
                     <img class="mainlogo" ng-src="{{brandingService.appLogoPath}}" />
                 </a>
             </div>
-
             <a href class="menubutton hidden" data-target="mainmenu" translate>Menu</a>
 
             <div class="action-icons-small">
@@ -221,9 +222,12 @@
             </div>
         </div>
 
+
         <div class="body">
+            
             <div class="mainmenu menu" id="mainmenu">
-                <ul>
+                
+                <ul>  
                     <li>
                         <a href="#/" class="home" ng-class="{active: current_page == 'home'}" translate>Home</a>
                     </li>
@@ -243,20 +247,22 @@
                             id="settings" translate>Settings</a>
 
                     </li>
+
                     <li>
-                        <a href="#/about" class="about" ng-class="{active: current_page == 'about'}" translate>About</a>
+                        <a href="#/about" id="about" class="about" ng-class="{active: current_page == 'about'}" translate>About</a>
                     </li>
                     <li ng-show="isLoggedIn">
                         <a href ng-click="log_out()" class="logout" translate>Log out</a>
                     </li>
                 </ul>
             </div>
+            
 
             <div ng-view class="content" style="width: 100%">
             </div>
         </div>
 
-        <div class="footer">
+        <!-- <div class="footer">
             <div class="about-footer">
                 <ul>
                     <li>
@@ -264,7 +270,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <notification-area></notification-area>
